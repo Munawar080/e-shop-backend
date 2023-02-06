@@ -7,7 +7,6 @@ namespace E_ShopBackend.Models
 {
     public class Product
     {
-
         public int Id{ get; set; }
         
         [Required]
@@ -21,6 +20,6 @@ namespace E_ShopBackend.Models
 
         [Required]
         [StringLength(255)]
-        public string Title{ get; set; }
+        public string Title{ get; set; }   
     }
 }
