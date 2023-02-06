@@ -6,7 +6,8 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-
+using AutoMapper;
+using E_ShopBackend.App_Start;
 namespace E_ShopBackend
 {
     public class MvcApplication : System.Web.HttpApplication
@@ -20,6 +21,9 @@ namespace E_ShopBackend
 
             // configure web api
             GlobalConfiguration.Configure(WebApiConfig.Register);
+
+            // register mapping profile
+            Mapper.Initialize(c => c.AddProfile<MappingProfile>());
         }
             
     }

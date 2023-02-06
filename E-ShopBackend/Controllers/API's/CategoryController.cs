@@ -20,7 +20,11 @@ namespace E_ShopBackend.Controllers.API_s
 
         //public IHttpActionResult Get()
         //{
-            
+        //    var categories = _context.Categories.ToList();
+
+        //    if(categories == null)
+        //        return HttpError.e
+                
         //}
     }
 }
