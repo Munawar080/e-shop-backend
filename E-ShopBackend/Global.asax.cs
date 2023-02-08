@@ -14,16 +14,17 @@ namespace E_ShopBackend
     {
         protected void Application_Start()
         {
+            // configure web api
+            GlobalConfiguration.Configure(WebApiConfig.Register); 
+
+            // register mapping profile
+            Mapper.Initialize(c => c.AddProfile<MappingProfile>());
+
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            // configure web api
-            GlobalConfiguration.Configure(WebApiConfig.Register);
-
-            // register mapping profile
-            Mapper.Initialize(c => c.AddProfile<MappingProfile>());
         }
             
     }

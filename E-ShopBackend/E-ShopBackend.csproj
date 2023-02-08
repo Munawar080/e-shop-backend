@@ -176,7 +176,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\API%27s\CategoryController.cs" />
+    <Compile Include="Controllers\API%27s\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DTO%27s\CategoriesDTO.cs" />
     <Compile Include="Global.asax.cs">
