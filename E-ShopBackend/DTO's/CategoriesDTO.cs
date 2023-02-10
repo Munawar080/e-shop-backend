@@ -8,8 +8,7 @@ namespace E_ShopBackend.DTO_s
 {
     public class CategoriesDTO
     {
-        [Required]
-        public int Id { get; set; }
+        public int? Id { get; set; }
 
         [Required]
         [StringLength(255)]

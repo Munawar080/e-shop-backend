@@ -11,8 +11,12 @@ namespace E_ShopBackend.App_Start
     {
         public MappingProfile()
         {
+
             Mapper.CreateMap<Categories, CategoriesDTO>();
             Mapper.CreateMap<CategoriesDTO, Categories>();
+
+          
+            
         }
     }
 }

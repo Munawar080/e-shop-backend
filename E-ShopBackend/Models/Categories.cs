@@ -8,7 +8,7 @@ namespace E_ShopBackend.Models
     public class Categories
     {
 
-        [Required]
+        [Key]
         public int Id{ get; set; }
 
         [Required]

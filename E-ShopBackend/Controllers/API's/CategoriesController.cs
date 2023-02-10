@@ -63,7 +63,7 @@ namespace E_ShopBackend.Controllers.API_s
             if (categoryinDB == null)
                 throw new HttpResponseException(HttpStatusCode.NotFound);
 
-            Mapper.Map(categoriesDto, categoryinDB);
+           var cat =  Mapper.Map(categoriesDto, categoryinDB);
 
             _context.SaveChanges();
         }
