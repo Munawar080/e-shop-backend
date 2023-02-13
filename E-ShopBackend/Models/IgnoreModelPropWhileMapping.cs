@@ -6,11 +6,12 @@ using AutoMapper;
 using E_ShopBackend.DTO_s;
 namespace E_ShopBackend.Models
 {
-    public class ModelsMapping: Profile
+    public class IgnoreModelPropWhileMapping: Profile
     {
-        public ModelsMapping()
+        public IgnoreModelPropWhileMapping()
         {
             CreateMap<Categories, CategoriesDTO>().ForMember(dest => dest.Id, src => src.Ignore());
+            CreateMap<Product, ProductDTO>().ForMember(dest => dest.Id, src => src.Ignore());
         }
     }
 }

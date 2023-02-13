@@ -177,8 +177,10 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\API%27s\CategoriesController.cs" />
+    <Compile Include="Controllers\API%27s\ProductsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="DTO%27s\CategoriesDTO.cs" />
+    <Compile Include="DTO%27s\ProductDTO.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -202,10 +204,14 @@
     <Compile Include="Migrations\202302051154394_AddProductTable.Designer.cs">
       <DependentUpon>202302051154394_AddProductTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202302131835073_AddCategoryIdToProductModel.cs" />
+    <Compile Include="Migrations\202302131835073_AddCategoryIdToProductModel.Designer.cs">
+      <DependentUpon>202302131835073_AddCategoryIdToProductModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Categories.cs" />
-    <Compile Include="Models\ModelsMapping.cs" />
+    <Compile Include="Models\IgnoreModelPropWhileMapping.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -283,6 +289,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202302051154394_AddProductTable.resx">
       <DependentUpon>202302051154394_AddProductTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202302131835073_AddCategoryIdToProductModel.resx">
+      <DependentUpon>202302131835073_AddCategoryIdToProductModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

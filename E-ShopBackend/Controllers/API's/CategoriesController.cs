@@ -26,28 +26,28 @@ namespace E_ShopBackend.Controllers.API_s
         }
 
         // GET /api/categories/id
-        public CategoriesDTO GetCategory(int id)
+        public IHttpActionResult GetCategory(int id)
         {
             var category = _context.Categories.SingleOrDefault(c => c.Id == id);
 
             if (category == null)
-                throw new HttpResponseException(HttpStatusCode.BadRequest);
+                return NotFound();
 
-            return Mapper.Map<Categories, CategoriesDTO>(category);
+            return Ok(Mapper.Map<Categories, CategoriesDTO>(category)); 
         }
 
         // POST /api/catgories
         [HttpPost]
-        public CategoriesDTO CreateCategory(CategoriesDTO categoriesDto)
+        public IHttpActionResult CreateCategory(CategoriesDTO categoriesDto)
         {
             if (!ModelState.IsValid)
-                throw new HttpResponseException(HttpStatusCode.BadRequest);
+                return BadRequest();
 
             var category = Mapper.Map<CategoriesDTO, Categories>(categoriesDto);
             _context.Categories.Add(category);
             _context.SaveChanges();
             categoriesDto.Id = category.Id;
-            return categoriesDto;
+            return Created(new Uri(Request.RequestUri + "/" + category.Id), categoriesDto);
 
         }
 
