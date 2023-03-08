@@ -8,21 +8,18 @@ namespace E_ShopBackend.Models
     public class Product
     {
         [Key]
-        public int Id{ get; set; }
-        
-        [Required]
-        public Categories category { get; set; }
-
-        public byte categoryId { get; set; }
+        public int Id { get; set; }
+        public int categoriesId { get; set; }
+        public Categories categories { get; set; }
 
         [Required]
         public string ImageUrl { get; set; }
-        
+
         [Required]
-        public decimal Price{ get; set; }
+        public decimal Price { get; set; }
 
         [Required]
         [StringLength(255)]
-        public string Title{ get; set; }   
+        public string Title { get; set; }   
     }
 }

@@ -19,6 +19,7 @@ namespace E_ShopBackend.App_Start
             // products mappers
             Mapper.CreateMap<Product, ProductDTO>();
             Mapper.CreateMap<ProductDTO, Product>();
+
         }
     }
 }

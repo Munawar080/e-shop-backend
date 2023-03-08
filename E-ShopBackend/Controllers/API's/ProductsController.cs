@@ -5,8 +5,9 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using E_ShopBackend.Models;
-using E_ShopBackend.DTO_s;
+using E_ShopBackend.DTO_s;  
 using AutoMapper;
+using System.Data.Entity;
 namespace E_ShopBackend.Controllers.API_s
 {
     public class ProductsController : ApiController
@@ -19,9 +20,17 @@ namespace E_ShopBackend.Controllers.API_s
         }
 
 
-        public IEnumerable<ProductDTO> GetProducts()
+        //GET /api/products/
+        public IHttpActionResult GetProducts(string query = null)
         {
-            return _dbContext.Products.ToList().Select(Mapper.Map<Product, ProductDTO>);
+            var products = _dbContext.Products.Include(p => p.categories);
+            
+            if(!String.IsNullOrWhiteSpace(query))
+                products = products.Where(p => p.Title.Contains(query));
+
+            var productDtos = products.ToList().Select(Mapper.Map<Product, ProductDTO>);
+
+            return Ok(productDtos);
         }
 
         [HttpPost]

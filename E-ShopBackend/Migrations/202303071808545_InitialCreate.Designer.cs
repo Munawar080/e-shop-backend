@@ -7,13 +7,13 @@ namespace E_ShopBackend.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.0.0-20911")]
-    public sealed partial class AddRequiredContraintToCategoriesTable : IMigrationMetadata
+    public sealed partial class InitialCreate : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddRequiredContraintToCategoriesTable));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
         
         string IMigrationMetadata.Id
         {
-            get { return "202302042108127_AddRequiredContraintToCategoriesTable"; }
+            get { return "202303071808545_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+using E_ShopBackend.Models;
 
 namespace E_ShopBackend.DTO_s
 {
@@ -10,9 +11,6 @@ namespace E_ShopBackend.DTO_s
     {
         [Key]
         public int Id { get; set; }
-
-        public byte categoryId { get; set; }
-
         [Required]
         public string ImageUrl { get; set; }
 
@@ -21,6 +19,9 @@ namespace E_ShopBackend.DTO_s
 
         [Required]
         [StringLength(255)]
-        public string Title { get; set; }   
+        public string Title { get; set; }
+        //public int categoriesId { get; set; }
+
+        public CategoriesDTO categories { get; set; }
     }
 }

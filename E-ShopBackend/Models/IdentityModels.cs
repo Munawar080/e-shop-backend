@@ -16,6 +16,6 @@ namespace E_ShopBackend.Models
 
         // register all object model here
         public DbSet<Categories> Categories { get; set; }
-        public DbSet<Product> Products{ get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }

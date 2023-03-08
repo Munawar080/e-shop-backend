@@ -10,8 +10,9 @@ namespace E_ShopBackend.Models
     {
         public IgnoreModelPropWhileMapping()
         {
-            CreateMap<Categories, CategoriesDTO>().ForMember(dest => dest.Id, src => src.Ignore());
-            CreateMap<Product, ProductDTO>().ForMember(dest => dest.Id, src => src.Ignore());
+            //CreateMap<Product, ProductDTO>().ForMember(dest => dest.Id, src => src.Ignore());
+
+            //CreateMap<Categories, CategoriesDTO>().ForMember(dest => dest.Id, src => src.Ignore());
         }
     }
 }

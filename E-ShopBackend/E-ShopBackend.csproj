@@ -176,6 +176,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\API%27s\applicationdbcontext.cs" />
     <Compile Include="Controllers\API%27s\CategoriesController.cs" />
     <Compile Include="Controllers\API%27s\ProductsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -184,29 +185,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202302042052599_InitialModel.cs" />
-    <Compile Include="Migrations\202302042052599_InitialModel.Designer.cs">
-      <DependentUpon>202302042052599_InitialModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202302042101451_CreateCategoriesTable.cs" />
-    <Compile Include="Migrations\202302042101451_CreateCategoriesTable.Designer.cs">
-      <DependentUpon>202302042101451_CreateCategoriesTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202302042105549_ModifyConstraintIntoCategoriesTable.cs" />
-    <Compile Include="Migrations\202302042105549_ModifyConstraintIntoCategoriesTable.Designer.cs">
-      <DependentUpon>202302042105549_ModifyConstraintIntoCategoriesTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202302042108127_AddRequiredContraintToCategoriesTable.cs" />
-    <Compile Include="Migrations\202302042108127_AddRequiredContraintToCategoriesTable.Designer.cs">
-      <DependentUpon>202302042108127_AddRequiredContraintToCategoriesTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202302051154394_AddProductTable.cs" />
-    <Compile Include="Migrations\202302051154394_AddProductTable.Designer.cs">
-      <DependentUpon>202302051154394_AddProductTable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202302131835073_AddCategoryIdToProductModel.cs" />
-    <Compile Include="Migrations\202302131835073_AddCategoryIdToProductModel.Designer.cs">
-      <DependentUpon>202302131835073_AddCategoryIdToProductModel.cs</DependentUpon>
+    <Compile Include="Migrations\202303071808545_InitialCreate.cs" />
+    <Compile Include="Migrations\202303071808545_InitialCreate.Designer.cs">
+      <DependentUpon>202303071808545_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -226,6 +207,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\Test1.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -238,7 +220,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -275,23 +259,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202302042052599_InitialModel.resx">
-      <DependentUpon>202302042052599_InitialModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202302042101451_CreateCategoriesTable.resx">
-      <DependentUpon>202302042101451_CreateCategoriesTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202302042105549_ModifyConstraintIntoCategoriesTable.resx">
-      <DependentUpon>202302042105549_ModifyConstraintIntoCategoriesTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202302042108127_AddRequiredContraintToCategoriesTable.resx">
-      <DependentUpon>202302042108127_AddRequiredContraintToCategoriesTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202302051154394_AddProductTable.resx">
-      <DependentUpon>202302051154394_AddProductTable.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202302131835073_AddCategoryIdToProductModel.resx">
-      <DependentUpon>202302131835073_AddCategoryIdToProductModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202303071808545_InitialCreate.resx">
+      <DependentUpon>202303071808545_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
