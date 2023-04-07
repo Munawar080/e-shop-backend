@@ -13,7 +13,7 @@ namespace E_ShopBackend.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202303071808545_InitialCreate"; }
+            get { return "202303121644558_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source

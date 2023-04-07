@@ -185,9 +185,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202303071808545_InitialCreate.cs" />
-    <Compile Include="Migrations\202303071808545_InitialCreate.Designer.cs">
-      <DependentUpon>202303071808545_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202303121644558_InitialCreate.cs" />
+    <Compile Include="Migrations\202303121644558_InitialCreate.Designer.cs">
+      <DependentUpon>202303121644558_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -225,6 +225,7 @@
     </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </Content>
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -259,8 +260,8 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202303071808545_InitialCreate.resx">
-      <DependentUpon>202303071808545_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202303121644558_InitialCreate.resx">
+      <DependentUpon>202303121644558_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

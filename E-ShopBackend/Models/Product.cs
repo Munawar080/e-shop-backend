@@ -9,6 +9,8 @@ namespace E_ShopBackend.Models
     {
         [Key]
         public int Id { get; set; }
+
+        [Required]
         public int categoriesId { get; set; }
         public Categories categories { get; set; }
 
